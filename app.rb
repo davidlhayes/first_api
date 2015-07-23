@@ -1,4 +1,4 @@
-require 'Bundler'
+require 'bundler'
 Bundler.require()
 
 # http://localhost/
@@ -8,6 +8,10 @@ end
 
 # http://localhost/api/awesome/
 get '/api/awesome' do
-  #do something else
+  {:title => 'Aliens',
+   :release_year => 1986,
+   :female_lead => 'Sigourney Weaver',
+   :male_lead => 'Paul Reiser',
+   :genre => 'Sci-Fi'}.to_json
 
 end
